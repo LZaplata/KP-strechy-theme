@@ -1,15 +1,15 @@
-url = "/autostyl/novinky/:page?|^[0-9]+$"
+url = "/reference/:page?|^[0-9]+$"
 layout = "default"
-title = "Novinky"
+title = "Reference"
 
-[blogPosts events]
+[blogPosts posts]
 pageNumber = "{{ :page }}"
+categoryFilter = "reference"
 postsPerPage = 12
 noPostsMessage = "Nenalezeny žádné příspěvky"
 sortOrder = "published_at asc"
-categoryPage = "novinky-kategorie"
+categoryPage = "novinky"
 postPage = "novinka"
-exceptCategories = "kariera"
 ==
 <div class="container-fluid py-5" id="post">
     <div class="container-lg pb-xl-4">
@@ -17,8 +17,8 @@ exceptCategories = "kariera"
             {{ this.page.title }}
         </h1>
 
-        <div class="events row row-cols-1 gy-5 row-cols-sm-2 row-cols-lg-3">
-            {% component "events" %}
+        <div class="posts row row-cols-1 gy-5 row-cols-sm-2 row-cols-lg-3">
+            {% component "posts" %}
         </div>
     </div>
 </div>

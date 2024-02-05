@@ -1,8 +1,8 @@
-url = "/autostyl/novinky/:category/:slug"
+url = "/reference/:slug"
 layout = "default"
 title = "Novinka"
 
-[blogPost event]
+[blogPost post]
 slug = "{{ :slug }}"
 categoryPage = "novinky"
 
@@ -11,6 +11,6 @@ handle = "Pages\Settings"
 ==
 <div class="container-fluid py-5" id="post">
     <div class="container-lg">
-        {% component "event" %}
+        {% component "post" %}
     </div>
 </div>

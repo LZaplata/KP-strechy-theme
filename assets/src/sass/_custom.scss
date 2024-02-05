@@ -301,10 +301,12 @@ $footer-column-border-breakpoint:       "sm";           // sm, md, lg, xl, xxl
 
 $post-card-image-overlay-bg:                rgba($white, .5);
 $post-card-image-overlay-icon-font-size:    3rem;
+$post-card-title-color:                     $body-color;
 $post-card-title-font-size:                 $h3-font-size;
 $post-card-title-font-weight:               $font-weight-medium;
 $post-card-title-underline-color:           transparent;
-$post-card-hover-title-underline-color:     $primary;
+$post-card-hover-title-color:               $primary;
+$post-card-hover-title-underline-color:     transparent;
 
 $post-row-image-overlay-bg:                 $post-card-image-overlay-bg;
 $post-row-image-overlay-icon-font-size:     $post-card-image-overlay-icon-font-size;

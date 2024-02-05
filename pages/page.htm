@@ -16,11 +16,6 @@ imagesPerPage = 16
 
 [collection faq]
 handle = "FAQ\Question"
-
-[events]
-page = "{{ :page }}"
-perPage = 10
-eventPage = "detail-akce-muzeum-krkonos"
 ==
 <?php
 function onEnd()
@@ -69,12 +64,6 @@ function onEnd()
                             {% endif %}
                         </div>
                     {% endfor %}
-
-                    {% if page.id == "akce" %}
-                        <div class="content content-events">
-                            {% component "events" %}
-                        </div>
-                    {% endif %}
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 .post
     &-card
         a
+            text-decoration: none
+
             .img
                 .overlay
                     background-color: $post-card-image-overlay-bg
@@ -11,6 +13,7 @@
                         font-size: $post-card-image-overlay-icon-font-size
 
             .title
+                color: $post-card-title-color
                 font-size: $post-card-title-font-size
                 font-weight: $post-card-title-font-weight
                 text-decoration: underline
@@ -23,6 +26,7 @@
                         opacity: 1
 
                 .title
+                    color: $post-card-hover-title-color
                     text-decoration-color: $post-card-hover-title-underline-color
 
     &-row
