@@ -1,0 +1,8 @@
+{
+    "name": "lzaplata/kpstrechy-theme",
+    "type": "october-theme",
+    "description": "Theme for KP st\u0159echy company from Trutnov.",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

@@ -1,0 +1,46 @@
+items:
+    -
+        title: Výroba
+        type: url
+        url: '#vyroba'
+        code: museums
+        viewBag:
+            isHidden: '1'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Reference
+        type: url
+        url: '#reference'
+        code: infocenters
+        viewBag:
+            isHidden: '1'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'O nás'
+        nesting: null
+        type: url
+        url: '#o-nas'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kontakt
+        nesting: null
+        type: url
+        url: '#kontakt'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Main Menu'

@@ -1,0 +1,202 @@
+url = "/"
+layout = "default"
+title = "Úvod"
+
+[collection slider]
+handle = "Slider\Slide"
+
+[global slider_settings]
+handle = "Slider\Settings"
+
+[collection partners]
+handle = "Partners\Partner"
+
+[collection portfolio_categories]
+handle = "Portfolio\Category"
+==
+{% if slider.getIterator().count %}
+    <div class="{#container-fluid#}"> {# uncomment while slider with horizontal margin #}
+        <div class="slider-swiper-wrapper position-relative {#container-fluid#}"> {# uncomment while slider with horizontal margin #}
+            {% partial "_swiper/slider" slides=slider settings=slider_settings %}
+
+            <div class="gradient position-absolute start-0 top-0 w-100 h-100"></div>
+
+            <div class="info position-absolute start-50 translate-middle-x w-100">
+                <p class="title fw-bold text-center text-body fs-1 mb-2">
+                    KP
+                </p>
+
+                <p class="heading h1 text-center mb-0">
+                    Realizace střech
+                </p>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% component "quicknews" %}
+
+<div class="container-fluid py-5" id="proc-my">
+    <div class="container-lg pt-xl-4">
+        <h2 class="h1 text-center mb-5">
+            Proč si vybrat nás?
+        </h2>
+
+        <div class="row row-cols-1 gy-4 row-cols-lg-3 gy-0 gx-xl-5 gx-xxl-7">
+            <div class="col">
+                <p class="text-center mb-3">
+                    <i class="ph ph-seal-check fs-1 text-primary"></i>
+                </p>
+
+                <h3 class="fw-bold h2 text-center">
+                   Kvalita
+                </h3>
+
+                <p class="mb-0">
+                    V první řadě dbáme na kvalitu provedených prací, každou krytinu pokládáme dle daných technologických
+                    postupů a snažíme se odvést práci pod kterou se můžeme podepsat. Nejlepší reklamou je pro nás
+                    doporučení od spokojeného zákazníka.
+                </p>
+            </div>
+
+            <div class="col">
+                <p class="text-center mb-3">
+                    <i class="ph ph-gauge fs-1 text-primary"></i>
+                </p>
+
+                <h3 class="fw-bold h2 text-center">
+                    Rychlost
+                </h3>
+
+                <p class="mb-0">
+                    Náš tým je tvořen min. devíti pracovníky a dalšími spolupracujícími partnery. Proto jsme schopni
+                    realizovat několik zakázek najednou, přičemž často překračujeme standardní osmi hodinovou pracovní
+                    dobu.
+                </p>
+            </div>
+
+            <div class="col">
+                <p class="text-center mb-3">
+                    <i class="ph ph-hand-heart fs-1 text-primary"></i>
+                </p>
+
+                <h3 class="fw-bold h2 text-center">
+                    Vstřícný přístup
+                </h3>
+
+                <p class="mb-0">
+                    Vždy se snažíme maximálně vyhovět přáním zákazníka. Doporučíme krytinu včetně vhodně zvoleného
+                    plechování dle finančních možností.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-4 ps-md-0 pe-xl-0 overflow-hidden" id="o-nas">
+    <div class="container-fluid ps-md-0 pe-xl-0">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col d-flex col-md-5 col-xl pe-xl-0">
+                <img src="{{ 'assets/images/about.jpg'|theme }}" alt="O nás" class="img-fluid rounded-end-3 object-fit-md-cover">
+            </div>
+
+            <div class="col mt-4 col-md-7 mt-md-0 d-md-flex align-items-md-center col-xl ps-xl-0">
+                <div class="my-md-4 mx-xl-5 px-xxl-5">
+                    <h2 class="h1 pb-2 mb-3">
+                        KP - Realizace střech
+                    </h2>
+
+                    <p>
+                        Naše společnost vznikla jakožto následníci firmy Kramár, která má v našem kraji dlouholetou
+                        tradici. Firma Kramár vznikla jako sdružení podnikatelů Františka Kramára, Milana Kramára a
+                        Františka Macháčka, na trhu působila od roku 1990, přičemž za celou dobu jejího působení
+                        realizovala celou škálu převážně rekonstruovaných střech počínaje menšími rodinnými domy, přes
+                        větší objekty jako jsou haly, nevyjímaje umělecké projekty, především kostelní věže.
+                    </p>
+
+                    <p>
+                        Společnost KP – Realizace Střech s.r.o. jsme založili my mladí následníci pro zachování rodinné
+                        tradice, ve které chceme dále pokračovat a vybudovat firmu s kvalitními službami a důslednou
+                        prací tak, jak tomu bylo doposud. Společnost jsme založili data 9.4.2013.
+                    </p>
+
+                    <ul class="list-unstyled mt-4 mb-0 fs-4 text-dark d-flex flex-column gap-2">
+                        <li class="d-flex align-items-center">
+                            <i class="ph ph-check-circle text-primary me-2 fs-2"></i>
+
+                            <p class="mb-0">
+                                <span class="fw-bold">
+                                    16m
+                                </span>
+
+                                vysokozdvižná plošina
+                            </p>
+                        </li>
+
+                        <li class="d-flex align-items-center">
+                            <i class="ph ph-check-circle text-primary me-2 fs-2"></i>
+
+                            <p class="mb-0">
+                                <span class="fw-bold">
+                                    6m
+                                </span>
+
+                                ohýbačka plechů až do 1mm
+                            </p>
+                        </li>
+
+                        <li class="d-flex align-items-center">
+                            <i class="ph ph-check-circle text-primary me-2 fs-2"></i>
+
+                            <p class="mb-0">
+                                <span class="fw-bold">
+                                    16m
+                                </span>
+
+                                výtahový žebřík
+                            </p>
+                        </li>
+
+                        <li class="d-flex align-items-center">
+                            <i class="ph ph-check-circle text-primary me-2 fs-2"></i>
+
+                            <p class="mb-0">
+                                <span class="fw-bold">
+                                    SCHLEBACH
+                                </span>
+
+                                profilovací stroj
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5" id="partners">
+    <div class="container-lg pt-xl-4">
+        <h2 class="h1 text-center mb-4">
+            Partneři
+        </h2>
+
+        <div class="swiper partners-swiper partners">
+            <div class="swiper-wrapper">
+                {% for partner in partners %}
+                    <div class="swiper-slide">
+                        {% if partner.link %}
+                            <a href="{{ partner.link }}">
+                        {% endif %}
+                                <img src="{{ partner.logo.path }}" alt="{{ partner.logo.description }}" class="img-fluid">
+                        {% if partner.link %}
+                            </a>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+
+{#            <div class="swiper-scrollbar"></div>#}
+        </div>
+    </div>
+</div>
