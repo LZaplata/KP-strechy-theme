@@ -15,7 +15,7 @@ items:
     -
         title: Reference
         type: cms-page
-        code: infocenters
+        code: references
         reference: novinky
         viewBag:
             isHidden: '0'

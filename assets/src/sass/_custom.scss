@@ -321,7 +321,7 @@ $post-font-weight-bold:                 $font-weight-bold;
 $map-card-header-bg:                    $white;
 $map-card-footer-bg:                    $white;
 
-$sidebar-nav-bg:                        $gray-300;
+$sidebar-nav-bg:                        $gray-100;
 $sidebar-nav-padding-x:                 20px;
 $sidebar-nav-padding-y:                 5px;
 
@@ -339,10 +339,10 @@ $sidebar-nav-item-after-color:          $primary;
 $sidebar-nav-item-active-before-content:    none;       // none for turn off
 $sidebar-nav-item-active-after-content:     "\ea00";    // none for turn off
 
-$sidebar-nav-link-color:                $gray-500;
+$sidebar-nav-link-color:                $body-color;
 $sidebar-nav-link-font-size:            $font-size-base;
 $sidebar-nav-link-font-weight:          $font-weight-regular;
-$sidebar-nav-link-underline-color:      $sidebar-nav-link-color;
+$sidebar-nav-link-underline-color:      transparent;
 $sidebar-nav-link-padding-x:            0;
 $sidebar-nav-link-padding-y:            10px;
 

@@ -1,4 +1,4 @@
-url = "/reference/:slug"
+url = "/reference/:category/:slug"
 layout = "default"
 title = "Novinka"
 
@@ -8,6 +8,13 @@ categoryPage = "novinky"
 
 [global page_settings]
 handle = "Pages\Settings"
+==
+<?php
+    function onInit()
+    {
+        $this["activeMenuItem"] = "references";
+    }
+?>
 ==
 <div class="container-fluid py-5" id="post">
     <div class="container-lg">

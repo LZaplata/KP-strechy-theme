@@ -2,7 +2,7 @@
     {% if not item.viewBag.isHidden %}
         <li role="presentation" class="nav-item d-inline-flex align-items-center level-{{ level }} {{ item.viewBag.cssClass }}">
             {% if item.url %}
-                <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }} class="nav-link position-relative {{ item.isActive ? 'active' : '' }} {{ item.isChildActive ? 'active' : '' }}">
+                <a href="{% if item.url starts with '#' %}{{ 'homepage'|page }}/{% endif %}{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }} class="nav-link position-relative {{ item.isActive ? 'active' : '' }} {{ item.isChildActive ? 'active' : '' }}">
                     {{ item.title }}
                 </a>
 
