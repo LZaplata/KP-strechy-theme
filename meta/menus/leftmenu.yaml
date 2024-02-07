@@ -16,8 +16,105 @@ items:
         title: 'Falcované, drážkované střechy'
         nesting: 0
         type: blog-category
+        url: null
         code: ''
         reference: '3'
+        cmsPage: novinky-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Fóliové systémy'
+        nesting: 0
+        type: blog-category
+        code: ''
+        reference: '4'
+        cmsPage: novinky-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kostely
+        nesting: 0
+        type: blog-category
+        code: ''
+        reference: '5'
+        cmsPage: novinky-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Nástřik
+        nesting: 0
+        type: blog-category
+        code: ''
+        reference: '6'
+        cmsPage: novinky-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Ostatní klempířina'
+        nesting: 0
+        type: blog-category
+        code: ''
+        reference: '7'
+        cmsPage: novinky-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Plastové šindele'
+        nesting: 0
+        type: blog-category
+        code: ''
+        reference: '8'
+        cmsPage: novinky-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Střešní tašky'
+        nesting: 0
+        type: blog-category
+        code: ''
+        reference: '9'
+        cmsPage: novinky-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Umělecké klempířství'
+        nesting: 0
+        type: blog-category
+        code: ''
+        reference: '10'
+        cmsPage: novinky-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Vláknocementové šablony'
+        nesting: 0
+        type: blog-category
+        code: ''
+        reference: '11'
         cmsPage: novinky-kategorie
         replace: 0
         viewBag:

@@ -24,8 +24,11 @@ header
 
     .info
         z-index: 7
-        top: 50%
+        top: 60%
         transform: translateY(-50%) translateX(-50%) !important
+
+        @include media-breakpoint-up(sm)
+            top: 50%
 
         .title
             letter-spacing: 4px
@@ -47,58 +50,6 @@ header
         &-bullet
             &-active
                 outline: 5px solid $brown-200
-
-.portfolio
-    .nav
-        --bs-nav-underline-link-active-color: #{$primary}
-        --bs-nav-underline-border-width: 2px
-        --bs-nav-link-font-size: #{$nav-link-font-size}
-        --bs-nav-link-color: #{$brown-300}
-        --bs-nav-underline-gap: 0
-
-        .nav-item
-            .nav-link
-                letter-spacing: 2px
-                padding-bottom: 10px
-
-            @include media-breakpoint-up(md)
-                .nav-link
-                    &:not(.active)
-                        border-color: $brown-100
-
-            @include media-breakpoint-down(md)
-                width: 100%
-
-                &:not(:first-child)
-                    .nav-link
-                        padding-top: 10px
-
-    &-categories
-        .description
-            color: $brown-300
-
-            *
-                &:last-child
-                    margin-bottom: 0
-
-    &-references
-        .description
-            *
-                &:last-child
-                    margin-bottom: 0
-
-        .reference
-            .images
-                .image
-                    .more
-                        background: rgba(var(--bs-black-rgb), .7)
-
-#contact
-    .bg
-        left: 60%
-
-        img
-            height: 115%
 
 #cookies-bar
     @include media-breakpoint-down(md)
