@@ -14,9 +14,13 @@ items:
             isExternal: '0'
     -
         title: Reference
+        nesting: null
         type: cms-page
+        url: null
         code: references
         reference: novinky
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
