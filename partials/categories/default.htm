@@ -1,4 +1,4 @@
-{% set categories = __SELF__.categories %}
+{% set categories = __SELF__.categories.take(4) %}
 
 {% if categories|length > 0 %}
     <div class="categories row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-4">
