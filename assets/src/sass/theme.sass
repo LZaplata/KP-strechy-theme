@@ -77,11 +77,17 @@ header
             border-top-left-radius: map-get($spacers, 3)
             border-bottom-left-radius: map-get($spacers, 3)
 
+        @include media-breakpoint-up(md)
+            min-height: 550px
+
 #historie
     .rounded-start-3
         @include media-breakpoint-down(md)
             border-top-right-radius: map-get($spacers, 3)
             border-bottom-right-radius: map-get($spacers, 3)
+
+        @include media-breakpoint-up(md)
+            min-height: 550px
 
 #reference-categories
     .categories
