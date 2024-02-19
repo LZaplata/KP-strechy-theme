@@ -70,3 +70,15 @@ header
             .modal-footer
                 padding: 0
                 border-top: none
+
+#o-nas
+    .rounded-end-3
+        @include media-breakpoint-down(md)
+            border-top-left-radius: map-get($spacers, 3)
+            border-bottom-left-radius: map-get($spacers, 3)
+
+#historie
+    .rounded-start-3
+        @include media-breakpoint-down(md)
+            border-top-right-radius: map-get($spacers, 3)
+            border-bottom-right-radius: map-get($spacers, 3)
