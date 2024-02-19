@@ -2,7 +2,7 @@ import lightGallery from "lightgallery";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import Swiper from "swiper";
-import {Pagination, Autoplay} from "swiper/modules";
+import {Pagination, Autoplay, Navigation} from "swiper/modules";
 
 window.lightGallery = lightGallery;
 window.lgThumbnail = lgThumbnail;
@@ -37,6 +37,7 @@ lightGallery(document.getElementById("reference-images"), {
 });
 
 var sliderSwiper = new Swiper(".slider-swiper", {
+    modules: [Navigation],
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

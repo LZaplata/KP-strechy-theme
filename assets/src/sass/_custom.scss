@@ -204,16 +204,16 @@ $offcanvas-nav-level-1-link-font-size:      map-get($font-sizes, 4);
 $offcanvas-nav-level-1-link-font-weight:    $font-weight-medium;
 $offcanvas-nav-level-1-icon-font-weight:    $font-size-sm;
 
-$slider-navigation-color:               $black;
-$slider-navigation-bg:                  $white;
+$slider-navigation-color:               $white;
+$slider-navigation-bg:                  rgba($black, .25);
 $slider-navigation-font-size:           map-get($font-sizes, 2);
 $slider-navigation-width:               40px;
 $slider-navigation-height:              $slider-navigation-width;
 $slider-navigation-sides-offset:        40px;
 $slider-navigation-hover-color:         $white;
 $slider-navigation-hover-bg:            $primary;
-$slider-navigation-border-width:        1px;    // 0 for turn off
-$slider-navigation-border-color:        $primary;
+$slider-navigation-border-width:        0;    // 0 for turn off
+$slider-navigation-border-color:        $black;
 
 $slider-pagination-bg:                  $white;
 $slider-pagination-inactive-bg:         $white;
