@@ -82,10 +82,10 @@ $headings-font-family:                  $font-family-serif;
 $headings-font-weight:                  $font-weight-regular;
 $headings-color:                        $brown;
 
-$header-bg:                             transparent;
+$header-bg:                             $white;
 $header-border-color:                   $gray-300;
 $header-border-width:                   1px;
-$header-position-absolute:              true;
+$header-position-absolute:              false;
 $header-position-absolute-only-hp:      true;
 
 $header-logo-sm-height:                 55px;           // auto for turn off - this value is relevant from breakpoint below (not included) down
@@ -301,6 +301,7 @@ $footer-column-border-breakpoint:       "sm";           // sm, md, lg, xl, xxl
 
 $post-card-image-overlay-bg:                rgba($white, .5);
 $post-card-image-overlay-icon-font-size:    3rem;
+$post-card-image-border-radius:             $border-radius-sm;
 $post-card-title-color:                     $body-color;
 $post-card-title-font-size:                 $h3-font-size;
 $post-card-title-font-weight:               $font-weight-medium;
@@ -324,6 +325,7 @@ $map-card-footer-bg:                    $white;
 $sidebar-nav-bg:                        $gray-100;
 $sidebar-nav-padding-x:                 20px;
 $sidebar-nav-padding-y:                 5px;
+$sidebar-nav-border-radius:             $border-radius-sm;
 
 $sidebar-nav-item-border-width:         1px;        // 0 for turn off
 $sidebar-nav-item-border-color:         $gray-200;

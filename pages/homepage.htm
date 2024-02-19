@@ -13,6 +13,11 @@ handle = "Partners\Partner"
 
 [collection portfolio_categories]
 handle = "Portfolio\Category"
+
+[blogCategories categories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "novinky-kategorie"
 ==
 {% if slider.getIterator().count %}
     <div class="{#container-fluid#}"> {# uncomment while slider with horizontal margin #}
@@ -36,6 +41,12 @@ handle = "Portfolio\Category"
 {% endif %}
 
 {% component "quicknews" %}
+
+<div class="container-fluid py-5" id="reference-categories">
+    <div class="container-lg pt-xl-4">
+        {% component "categories" %}
+    </div>
+</div>
 
 <div class="container-fluid py-5" id="proc-my">
     <div class="container-lg pt-xl-4">

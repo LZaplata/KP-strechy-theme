@@ -82,3 +82,27 @@ header
         @include media-breakpoint-down(md)
             border-top-right-radius: map-get($spacers, 3)
             border-bottom-right-radius: map-get($spacers, 3)
+
+#reference-categories
+    .categories
+        .category
+            a
+                .img
+                    .overlay
+                        background-color: $post-card-image-overlay-bg
+                        opacity: 0
+                        transition: $transition-base
+
+                        .icon
+                            font-size: $post-card-image-overlay-icon-font-size
+
+                h3
+                    transition: $transition-base
+
+                &:hover
+                    .img
+                        .overlay
+                            opacity: 1
+
+                    h3
+                        color: $primary
