@@ -20,7 +20,7 @@ displayEmpty = 1
 categoryPage = "novinky-kategorie"
 ==
 {% if slider.getIterator().count %}
-    <div class="{#container-fluid#}"> {# uncomment while slider with horizontal margin #}
+    <div class="{#container-fluid#} d-none d-md-block"> {# uncomment while slider with horizontal margin #}
         <div class="slider-swiper-wrapper position-relative {#container-fluid#}"> {# uncomment while slider with horizontal margin #}
             {% partial "_swiper/slider" slides=slider settings=slider_settings %}
 
