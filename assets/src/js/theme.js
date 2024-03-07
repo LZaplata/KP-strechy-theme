@@ -36,6 +36,14 @@ lightGallery(document.getElementById("reference-images"), {
     exThumbImage: "data-external-thumb-image",
 });
 
+lightGallery(document.getElementById("gallery"), {
+    selector: ".image-link",
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+    galleryId: 1,
+    exThumbImage: "data-external-thumb-image",
+});
+
 var sliderSwiper = new Swiper(".slider-swiper", {
     modules: [Navigation],
     navigation: {
