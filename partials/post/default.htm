@@ -25,7 +25,7 @@
             <div class="position-relative">
                 <img src="{{ gallery_image.thumb(520, 350, {"mode": "crop"}) }}" alt="{{ gallery_image.description }}" class="img-fluid w-100 rounded-1">
 
-                <a href="{{ image.path }}" class="image-link position-absolute start-0 w-100 top-0 h-100" data-external-thumb-image="{{ image.path }}"></a>
+                <a href="{{ image.path }}" class="image-link position-absolute start-0 w-100 top-0 h-100" data-external-thumb-image="{{ gallery_image.path }}"></a>
             </div>
         </div>
     {% endfor %}
