@@ -18,7 +18,7 @@ items:
         type: cms-page
         url: null
         code: references
-        reference: novinky
+        reference: reference
         cmsPage: null
         replace: null
         viewBag:
@@ -26,45 +26,49 @@ items:
             cssClass: ''
             isExternal: '0'
         items:
-            -   title: Klempířství
+            -
+                title: Klempířství
                 nesting: 0
                 type: blog-category
                 code: ''
                 reference: '2'
-                cmsPage: novinky-kategorie
+                cmsPage: reference-kategorie
                 replace: 0
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
-            -   title: 'Opravy památek'
+            -
+                title: 'Opravy památek'
                 nesting: 0
                 type: blog-category
                 code: ''
                 reference: '3'
-                cmsPage: novinky-kategorie
+                cmsPage: reference-kategorie
                 replace: 0
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
-            -   title: Hydroizolace
+            -
+                title: Hydroizolace
                 nesting: 0
                 type: blog-category
                 code: ''
                 reference: '4'
-                cmsPage: novinky-kategorie
+                cmsPage: reference-kategorie
                 replace: 0
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
-            -   title: Pokrývačství
+            -
+                title: Pokrývačství
                 nesting: 0
                 type: blog-category
                 code: ''
                 reference: '5'
-                cmsPage: novinky-kategorie
+                cmsPage: reference-kategorie
                 replace: 0
                 viewBag:
                     isHidden: '0'

@@ -1,13 +1,13 @@
-url = "/reference/:page?|^[0-9]+$"
+url = "/nov/:page?|^[0-9]+$"
 layout = "default"
-title = "Reference"
+title = "Novinky"
 
 [blogPosts posts]
 pageNumber = "{{ :page }}"
 postsPerPage = 12
 noPostsMessage = "Nenalezeny žádné příspěvky"
 sortOrder = "published_at asc"
-categoryPage = "novinky"
+categoryPage = "novinky-kategorie"
 postPage = "novinka"
 exceptCategories = "rychle-zpravy"
 
@@ -17,7 +17,7 @@ code = "leftmenu"
 <?php
     function onInit()
     {
-        $this["activeMenuItem"] = "references";
+        $this["activeMenuItem"] = "posts";
     }
 ?>
 ==

@@ -1,10 +1,10 @@
-url = "/novinky/:slug"
+url = "/reference/:category/:slug"
 layout = "default"
-title = "Novinka"
+title = "Reference"
 
 [blogPost post]
 slug = "{{ :slug }}"
-categoryPage = "novinky"
+categoryPage = "reference"
 
 [global page_settings]
 handle = "Pages\Settings"
@@ -12,7 +12,7 @@ handle = "Pages\Settings"
 <?php
     function onInit()
     {
-        $this["activeMenuItem"] = "posts";
+        $this["activeMenuItem"] = "references";
     }
 ?>
 ==

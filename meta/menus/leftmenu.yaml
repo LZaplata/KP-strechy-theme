@@ -5,7 +5,7 @@ items:
         type: blog-category
         code: ''
         reference: '2'
-        cmsPage: novinky-kategorie
+        cmsPage: reference-kategorie
         replace: 0
         viewBag:
             isHidden: '0'
@@ -17,7 +17,7 @@ items:
         type: blog-category
         code: ''
         reference: '3'
-        cmsPage: novinky-kategorie
+        cmsPage: reference-kategorie
         replace: 0
         viewBag:
             isHidden: '0'
@@ -29,7 +29,7 @@ items:
         type: blog-category
         code: ''
         reference: '4'
-        cmsPage: novinky-kategorie
+        cmsPage: reference-kategorie
         replace: 0
         viewBag:
             isHidden: '0'
@@ -41,7 +41,7 @@ items:
         type: blog-category
         code: ''
         reference: '5'
-        cmsPage: novinky-kategorie
+        cmsPage: reference-kategorie
         replace: 0
         viewBag:
             isHidden: '0'

@@ -1,6 +1,6 @@
-url = "/nov/:slug/:page?|^[0-9]+$"
+url = "/reference/:slug/:page?|^[0-9]+$"
 layout = "default"
-title = "Novinky kategorie"
+title = "Reference kategorie"
 
 [blogPosts posts]
 pageNumber = "{{ :page }}"
@@ -8,8 +8,8 @@ categoryFilter = "{{ :slug }}"
 postsPerPage = 12
 noPostsMessage = "Nenalezeny žádné příspěvky"
 sortOrder = "published_at asc"
-categoryPage = "novinky-kategorie"
-postPage = "novinka"
+categoryPage = "reference-kategorie"
+postPage = "reference-post"
 
 [staticMenu leftmenu]
 code = "leftmenu"

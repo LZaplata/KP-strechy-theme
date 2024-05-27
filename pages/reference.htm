@@ -1,15 +1,15 @@
-url = "/nov/:slug/:page?|^[0-9]+$"
+url = "/reference/:page?|^[0-9]+$"
 layout = "default"
-title = "Novinky kategorie"
+title = "Reference"
 
 [blogPosts posts]
 pageNumber = "{{ :page }}"
-categoryFilter = "{{ :slug }}"
 postsPerPage = 12
 noPostsMessage = "Nenalezeny žádné příspěvky"
 sortOrder = "published_at asc"
-categoryPage = "novinky-kategorie"
-postPage = "novinka"
+categoryPage = "reference"
+postPage = "reference-post"
+exceptCategories = "rychle-zpravy,novinky"
 
 [staticMenu leftmenu]
 code = "leftmenu"
@@ -24,7 +24,7 @@ code = "leftmenu"
 <div class="container-fluid py-5" id="post">
     <div class="container-lg pb-xl-4">
         <h1 class="mb-5">
-            Reference
+            {{ this.page.title }}
         </h1>
 
         <div class="row g-5">

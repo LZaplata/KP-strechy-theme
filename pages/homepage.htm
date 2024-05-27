@@ -17,7 +17,16 @@ handle = "Portfolio\Category"
 [blogCategories categories]
 slug = "{{ :slug }}"
 displayEmpty = 1
+categoryPage = "reference-kategorie"
+
+[blogPosts posts]
+pageNumber = "{{ :page }}"
+categoryFilter = "novinky"
+postsPerPage = 4
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at asc"
 categoryPage = "novinky-kategorie"
+postPage = "novinka"
 ==
 {% if slider.getIterator().count %}
     <div class="{#container-fluid#} d-none d-md-block"> {# uncomment while slider with horizontal margin #}
@@ -198,7 +207,7 @@ categoryPage = "novinky-kategorie"
     </div>
 </div>
 
-<div class="container-fluid py-5 pe-md-0 ps-xl-0 overflow-hidden" id="historie">
+<div class="container-fluid pt-5 pe-md-0 ps-xl-0 overflow-hidden" id="historie">
     <div class="container-fluid pe-md-0 ps-xl-0 pb-xxl-4">
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col d-flex col-md-5 order-md-1 col-xl ps-xl-0">
@@ -232,28 +241,14 @@ categoryPage = "novinky-kategorie"
     </div>
 </div>
 
-{#<div class="container-fluid py-5" id="partners">#}
-{#    <div class="container-lg pt-xl-4">#}
-{#        <h2 class="h1 text-center mb-4">#}
-{#            Partneři#}
-{#        </h2>#}
+<div class="container-fluid py-5" id="partners">
+    <div class="container-lg pb-xl-4">
+        <h2 class="h1 text-center mb-4">
+            Novinky
+        </h2>
 
-{#        <div class="swiper partners-swiper partners">#}
-{#            <div class="swiper-wrapper">#}
-{#                {% for partner in partners %}#}
-{#                    <div class="swiper-slide">#}
-{#                        {% if partner.link %}#}
-{#                            <a href="{{ partner.link }}">#}
-{#                        {% endif %}#}
-{#                                <img src="{{ partner.logo.path }}" alt="{{ partner.logo.description }}" class="img-fluid">#}
-{#                        {% if partner.link %}#}
-{#                            </a>#}
-{#                        {% endif %}#}
-{#                    </div>#}
-{#                {% endfor %}#}
-{#            </div>#}
-
-{#            <div class="swiper-scrollbar"></div>#}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
+            {% component "posts" %}
+        </div>
+    </div>
+</div>
